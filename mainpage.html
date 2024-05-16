@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supermarket</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-evenly;
+            margin: 20px auto;
+        }
+
+        .product-container {
+            width: 200px;
+            height: 320px;
+            margin: 40px 40px 40px 40px;
+            background-color: #f0f0f0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            overflow: hidden;
+            margin: 10px;
+        }
+
+        .product-image {
+            width: 100%;
+            height: 100%;
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+
+        .product-details {
+            text-align: center;
+        }
+
+        .add-to-cart {
+            padding: 5px 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .add-to-cart:hover {
+            background-color: #45a049;
+        }
+
+        header {
+            background-color: #146907;
+            color: #fff;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        .search-bar {
+            flex: 1;
+            text-align: right;
+        }
+
+        .search-bar input[type="text"] {
+            padding: 5px;
+            width: 200px;
+        }
+
+        .view-cart-button {
+            padding: 5px 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin-right: 10px;
+        }
+
+        .view-cart-button:hover {
+            background-color: #45a049;
+        }
+
+        .category-nav {
+            background-color: #51c229;
+            color: #fff;
+            display: flex;
+            justify-content: space-around;
+            padding: 10px 0;
+        }
+
+        .category-nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex: 1;
+            justify-content: space-evenly; 
+        }
+
+        .category-nav ul li {
+            margin: 0 10px;
+        }
+
+        .category-nav ul li:last-child {
+            border-right: none; /* Remove border from the last item */
+        }
+
+        .category-nav ul li a {
+            color: #fff;
+            margin-right: 5px;
+            text-decoration: none;
+        }
+
+        .category-nav ul li:hover {
+            background-color: rgba(255, 255, 255, 0.1); /* Faded background color on hover */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>DHAR-DEPARTMENTAL STORE</h1>
+        <div class="search-bar">
+            <input type="text" placeholder="SEARCH ITEM">
+            <button class="view-cart-button">View Cart</button>
+        </div>
+    </header>
+    <div class="category-nav">
+        <ul>
+            <li style="background-color: #146907; padding: 10px; border: solid 1px;"><a href="vege.html">Vegetables</a></li>
+            <li><a href="fruit.html">Fruits</a></li>
+            <li><a href="snack.html">Snacks</a></li>
+            <li><a href="nonveg.html">Non-veg</a></li>
+            <li><a href="household.html">Households</a></li>
+            <li><a href="stationary.html">Stationary</a></li>
+        </ul>
+    </div>
+    <div class="container">
+        <div class="product-container">
+            <div>
+                <img class="product-image" src="carrot.png" alt="Carrot">
+            </div>
+            <div class="product-details">
+                <p>Carrot</p>
+                <p>Rs. 10</p>
+            </div>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+        <div class="product-container">
+            <div>
+                <img class="product-image" src="tomato.png" alt="Tomato">
+            </div>
+            <div class="product-details">
+                <p>Tomato</p>
+                <p>Rs. 15</p>
+            </div>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+        <div class="product-container">
+            <div>
+                <img class="product-image" src="potato.png" alt="Potato">
+            </div>
+            <div class="product-details">
+                <p>Potato</p>
+                <p>Rs. 12</p>
+            </div>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+        <div class="product-container">
+            <div>
+                <img class="product-image" src="stick.png" alt="Spinach">
+            </div>
+            <div class="product-details">
+                <p>Spinach</p>
+                <p>Rs. 20</p>
+            </div>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product-container">
+            <div >
+                <img class="product-image" src="brinjal.png" alt="Brinjal">
+            </div>
+            <div class="product-details">
+                <p>Brinjal</p>
+                <p>Rs. 18</p>
+            </div>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+       
+    </div>
+    <div class="container">
+        <div class="product-container">
+            <div >
+                <img class="product-image" src="cabbage.png" alt="Cabbage">
+            </div>
+            <div class="product-details">
+                <p>Cabbage</p>
+                <p>Rs. 25</p>
+            </div>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+        <div class="product-container">
+            <div >
+                <img class="product-image" src="cucumber.png" alt="Cucumber">
+            </div>
+            <div class="product-details">
+                <p>Cucumber</p>
+                <p>Rs. 10</p>
+            </div>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+        <div class="product-container">
+            <div >
+                <img class="product-image" src="onion.png" alt="Onion">
+            </div>
+            <div class="product-details">
+                <p>Onion</p>
+                <p>Rs. 8</p>
+            </div>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+
+        
+        <div class="product-container">
+            <div >
+                <img class="product-image" src="garlic.png" alt="Garlic">
+            </div>
+            <div class="product-details">
+                <p>Garlic</p>
+                <p>Rs. 30</p>
+            </div>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product-container">
+            <div >
+                <img class="product-image" src="ginger.png" alt="Ginger">
+            </div>
+            <div class="product-details">
+                <p>Ginger</p>
+                <p>Rs. 22</p>
+            </div>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+    </div>
+        <div class="container">
+        <div class="product-container">
+            <div >
+                <img class="product-image" src="peace.png" alt="Green Chilli">
+            </div>
+            <div class="product-details">
+                <p>Green Chilli</p>
+                <p>Rs. 15</p>
+            </div>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product-container">
+            <div>
+                <img class="product-image" src="gara.png" alt="Bottle Gourd">
+            </div>
+            <div class="product-details">
+                <p>Bottle Gourd</p>
+                <p>Rs. 20</p>
+            </div>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+    
+        <div class="product-container">
+            <div>
+                <img class="product-image" src="pumpkin.png" alt="Pumpkin">
+            </div>
+            <div class="product-details">
+                <p>Pumpkin</p>
+                <p>Rs. 18</p>
+            </div>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+    
+        <div class="product-container">
+            <div>
+                <img class="product-image" src="capsicum.png" alt="Capsicum">
+            </div>
+            <div class="product-details">
+                <p>Capsicum</p>
+                <p>Rs. 25</p>
+            </div>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+    
+        <div class="product-container">
+            <div>
+                <img class="product-image" src="cabbage.png" alt="Leek">
+            </div>
+            <div class="product-details">
+                <p>Leek</p>
+                <p>Rs. 28</p>
+            </div>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+     
+    </div>
+</body>
+</html>

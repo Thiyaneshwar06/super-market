@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Supermarket</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-evenly;
+            margin: 20px auto;
+        }
+
+        .product-container {
+            width: 200px;
+            height: 320px;
+            margin: 40px 40px 40px 40px;
+            background-color: #f0f0f0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            overflow: hidden;
+            margin: 10px;
+        }
+
+        .product-image {
+            width: 100%;
+            height: 100%;
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+
+        .product-details {
+            text-align: center;
+        }
+
+        .add-to-cart {
+            padding: 5px 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .add-to-cart:hover {
+            background-color: #45a049;
+        }
+
+        header {
+            background-color: #146907;
+            color: #fff;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        .search-bar {
+            flex: 1;
+            text-align: right;
+        }
+
+        .search-bar input[type="text"] {
+            padding: 5px;
+            width: 200px;
+        }
+
+        .view-cart-button {
+            padding: 5px 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin-right: 10px;
+        }
+
+        .view-cart-button:hover {
+            background-color: #45a049;
+        }
+
+        .category-nav {
+            background-color: #51c229;
+            color: #fff;
+            display: flex;
+            justify-content: space-around;
+            padding: 10px 0;
+        }
+
+        .category-nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex: 1;
+            justify-content: space-evenly; 
+        }
+
+        .category-nav ul li {
+            margin: 0 10px;
+        }
+
+        .category-nav ul li:last-child {
+            border-right: none; /* Remove border from the last item */
+        }
+
+        .category-nav ul li a {
+            color: #fff;
+            margin-right: 5px;
+            text-decoration: none;
+        }
+
+        .category-nav ul li:hover {
+            background-color: rgba(255, 255, 255, 0.1); /* Faded background color on hover */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>DHAR-DEPARTMENTAL STORE</h1>
+        <div class="search-bar">
+            <input type="text" placeholder="SEARCH ITEM">
+            <button class="view-cart-button">View Cart</button>
+        </div>
+    </header>
+    <div class="category-nav">
+        <ul>
+            <li><a href="mainpage.html">Vegetables</a></li>
+            <li><a href="fruits.html">Fruits</a></li>
+            <li style="background-color: #146907; padding: 10px; border: solid 1px;"><a href="snack.html">Snacks</a></li>
+            <li><a href="nonveg.html">Non-veg</a></li>
+            <li><a href="#">Rice & Pearls</a></li>
+            <li><a href="household.html">Households</a></li>
+            <li><a href="stationary.html">Stationary</a></li>
+        </ul>
+    </div>
+    <div class="container">
+        <div class="product-container">
+            <div>
+                <img class="product-image" src="chips.png" alt="Chips">
+            </div>
+            <div class="product-details">
+                <p>Chips</p>
+                <p>Rs. 100</p>
+            </div>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+        <div class="product-container">
+            <div>
+                <img class="product-image" src="popcorn.png" alt="Popcorn">
+            </div>
+            <div class="product-details">
+                <p>Popcorn</p>
+                <p>Rs. 90</p>
+            </div>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+        <div class="product-container">
+            <div>
+                <img class="product-image" src="pretzel.png" alt="Pretzel">
+            </div>
+            <div class="product-details">
+                <p>Pretzel</p>
+                <p>Rs. 80</p>
+            </div>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+        <div class="product-container">
+            <div>
+                <img class="product-image" src="crakers.png" alt="Crackers">
+            </div>
+            <div class="product-details">
+                <p>Crackers</p>
+                <p>Rs. 110</p>
+            </div>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product-container">
+            <div >
+                <img class="product-image" src="nuts.png" alt="Nuts">
+            </div>
+            <div class="product-details">
+                <p>Nuts</p>
+                <p>Rs. 120</p>
+            </div>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+       
+    </div>
+    <div class="container">
+        <div class="product-container">
+            <div >
+                <img class="product-image" src="cookies.png" alt="Cookies">
+            </div>
+            <div class="product-details">
+                <p>Cookies</p>
+                <p>Rs. 95</p>
+            </div>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+        <div class="product-container">
+            <div >
+                <img class="product-image" src="chocolate.png" alt="Chocolates">
+            </div>
+            <div class="product-details">
+                <p>Chocolates</p>
+                <p>Rs. 85</p>
+            </div>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+        <div class="product-container">
+            <div >
+                <img class="product-image" src="cupcake.png" alt="Cupcakes">
+            </div>
+            <div class="product-details">
+                <p>Cupcakes</p>
+                <p>Rs. 105</p>
+            </div>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+
+        
+        <div class="product-container">
+            <div >
+                <img class="product-image" src="pretzel.png" alt="Pretzel">
+            </div>
+            <div class="product-details">
+                <p>Pretzel</p>
+                <p>Rs. 75</p>
+            </div>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product-container">
+            <div >
+                <img class="product-image" src="cookies.png" alt="Cookies">
+            </div>
+            <div class="product-details">
+                <p>Cookies</p>
+                <p>Rs. 85</p>
+            </div>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+    </div>
+        <div class="container">
+        <div class="product-container">
+            <div >
+                <img class="product-image" src="chips.png" alt="Chips">
+            </div>
+            <div class="product-details">
+                <p>Chips</p>
+                <p>Rs. 120</p>
+            </div>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product-container">
+            <div>
+                <img class="product-image" src="popcorn.png" alt="Popcorn">
+            </div>
+            <div class="product-details">
+                <p>Popcorn</p>
+                <p>Rs. 150</p>
+            </div>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+    
+        <div class="product-container">
+            <div>
+                <img class="product-image" src="cookies.png" alt="Cookies">
+            </div>
+            <div class="product-details">
+                <p>Cookies</p>
+                <p>Rs. 200</p>
+            </div>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+    
+        <div class="product-container">
+            <div>
+                <img class="product-image" src="chips.png" alt="Chips">
+            </div>
+            <div class="product-details">
+                <p>Chips</p>
+                <p>Rs. 90</p>
+            </div>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+    
+        <div class="product-container">
+            <div>
+                <img class="product-image" src="popcorn.png" alt="Popcorn">
+            </div>
+            <div class="product-details">
+                <p>Popcorn</p>
+                <p>Rs. 110</p>
+            </div>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>     
+    </div>
+
+</body>
+</html>
